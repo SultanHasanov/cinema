@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.movies-body{
+  padding: 20px;
+  .movies-content{
+    display: flex;
+  }
+  .movies-content-info{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 455px;
+    justify-content: space-between;
+    
+  }
+}
+
+.persons-info{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.person{
+  margin: 10px;
+}
+
+.movies_name{
+ 
+  margin: 20px;
+  width: max-content;
+  li{
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid green;
+    border-radius: 5px;
+    list-style-type: none;
+  }
+  li:hover{
+    background: green;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+.btn-back{
+  border: 1px solid green;
+  padding: 5px;
+  color: green;
+  border-radius: 5px;
+  width: max-content;
+}
+
+.error {
+    text-align: center;
+    p{
+      font-size: 24px;
+      color: red;
+    }
+}
+
+.error_pages {
+    color:blue;
+    text-decoration:underline;
+}
